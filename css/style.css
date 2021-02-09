@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .container-fluid{
     padding: 0px;
@@ -52,89 +53,52 @@
 }
 
 .description{
-    margin-top:22%;
-    padding: 0 25%;
+    margin-top:24%;
+    padding: 0 29%;
 }
-.description p{
+.description .blog-content p{
+    font-size: 16px;
+    line-height: 28px;
+}
+.description .blog-content h3{
+    margin: 25px 0px;
+}
+.description .blog-content img{
+    width:100%;
+    margin: 30px 0px;   
+}
+
+.description .quote img{
+    float:left;
+    width:60px;
+    margin: 40px 0px;
+    margin-right:30px;
+}
+.description .blog-content .quote p{
+    font-weight: 300;
+    font-style: italic;
+    line-height: 36px;
+    font-size: 28px;
+    overflow: hidden;
+    margin: 40px 0px;
+}
+.description .quote .author{
+    font-size:16px;
+    font-style:normal;
+    font-weight: bolder;
+}
+.description .blog-content li{
     font-size: 14px;
     line-height: 24px;
 }
-.description .section-2 h1,.section-3 h1, .section-4 h1, .section-5 h1{
-    font-size:24px;
+.description .blog-content ol 
+{   list-style: none; 
+    counter-reset: li
 }
-.description .section-2 p,.section-3 p, .section-4 p, .section-5 p{
-    font-size:14px;
-    line-height: 24px;
-}
-
-.section-2 .col-md-8{
-    margin: 0px;
-    padding:0px;
-    padding-right:30px;
-}
-.section-2 .col-md-4{
-    padding-bottom:40px;
-}
-.section-2 .sub-blog{
-    background-color: #f1f3f5;
-}
-.section-2 .col-md-4 .col-md-4{
-    padding:10px;
-}
-.section-2 .col-md-4 h1{
-    font-size: 18px;
-    padding-left:15px;
-    padding-bottom: 20px;
-}
-.section-2 .col-md-4 h3{
-    font-size: 12px;
-    margin:0px;
-}
-.section-2 .col-md-4 p{
-    margin-bottom: 0px;
-}
-.section-2 .blue{
-    font-size:10px;
-    color:rgb(0, 174, 255);
-}
-.section-2 .col-md-4 .row{
-    margin-top: 20px;
-}
-.section-2 .col-md-4 img{
-    width: 100%;
-    vertical-align: middle;
-    padding:0px;
-
-
-}
-.section-2 .blogdate{
-    font-size:10px;
-    font-weight: lighter;
-}
-.description .section-3 img{
-    width:100%;
-    margin-top:30px;
-}
-.section-4 .quote p{
-    font-size: 28px;
-    font-style: italic;
-    line-height: 40px;
-    font-weight: lighter;
-}
-.section-4 .row{
-    margin-top:30px;
-}
-.section-4 .author{
-    font-style: normal;
-    font-size: 18px;
-}
-.section-4 img{
-    float: right;
-}
-.section-6 ul{
+.description .blog-content ul{
     list-style: none;
 }
-.section-6 li::before{
+.description .blog-content ul li::before{
     content: "\2022";
     color: red;
     font-weight: bolder;
@@ -142,21 +106,10 @@
     display: inline-block; 
     width: 1em;
     margin-left: 1em 0em;
-    float: left;
+    float:left;
 }
-.section-6 h4, .section-7 h4{
-    font-size: 12px;
-}
-.section-6 li, .section-7 li{
-    font-size: 14px;
-    line-height: 24px;
-}
-.section-7 ol 
-{   list-style: none; 
-    counter-reset: li
-}
-.section-7 li {counter-increment: li}
-.section-7 ol li::before {
+.description .blog-content li {counter-increment: li}
+.description .blog-content ol li::before {
     content: "."counter(li); 
     color: red;
     display: inline-block; 
@@ -165,23 +118,6 @@
     margin-right: 0.5em; 
     text-align: right; 
     direction: rtl
-}
-.section-8{
-    background: #f1f3f5;
-    padding:40px;
-    font-size: 14px;
-    margin-top:20px;
-}
-.section-8 .media{
-    padding:20px;
-    background: white;
-}
-.section-8 a{
-    color: red;
-}
-.section-8 button{
-    background-color: black;
-    color:white;
 }
 @media (min-width: 1920px) {
 body{
@@ -206,10 +142,6 @@ body{
     .description{
         margin-top:12%;
         padding: 0 40px;
-    }
-    .section-4 img{
-        float:left;
-        display: block;
     }
     .section-2 .col-md-8{
         padding:20px;
