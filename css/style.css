@@ -119,6 +119,24 @@
     text-align: right; 
     direction: rtl
 }
+.media{
+    background: #f1f3f5;
+    padding:40px;
+    font-size: 14px;
+    margin-top:20px;
+}
+.sub-media{
+    margin-top: 20px;
+    padding:20px;
+    background: white;
+}
+.media a{
+    color: red;
+}
+.media button{
+    background-color: black;
+    color:white;
+}
 @media (min-width: 1920px) {
 body{
     width: 1920px;
