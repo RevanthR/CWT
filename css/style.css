@@ -125,17 +125,19 @@
     font-size: 14px;
     margin-top:20px;
 }
-.sub-media{
-    margin-top: 20px;
-    padding:20px;
-    background: white;
-}
+
 .media a{
     color: red;
 }
 .media button{
     background-color: black;
     color:white;
+}
+.sub-media{
+    display: block;
+    background-color: white;
+    padding:20px;
+    margin: 0px;
 }
 @media (min-width: 1920px) {
 body{
@@ -155,7 +157,8 @@ body{
         display:none;
     }
     .blog-headline .row p{
-        font-size: 12px;
+        font-size: 14px;
+        overflow: hidden;
     }
     .description{
         margin-top:12%;
