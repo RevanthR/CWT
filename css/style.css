@@ -176,13 +176,131 @@
     margin-right: -15%;
 }
 
-
-
+/* Home Page CSS */
+.homepage{
+    margin:0 10%;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top:20px;
+}
+.posts-1 .title p,.posts-2 .title p,.podcasts .title p{
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(231, 216, 216);
+}
+.posts-1 .section-subtitle,.posts-2 .section-subtitle,.podcasts .section-subtitle{
+    float:right;
+    font-size: 14px;
+    color:red;
+}
+.posts-1 .section-title, .posts-2 .section-title, .podcasts .section-title{
+    font-size: 21px;
+    border-bottom: 3px solid #FAC346;
+    letter-spacing: -0.5;
+    padding-bottom:10px;
+}
+.posts-2 .section-title{
+    border-bottom: 3px solid #15a1ff;
+}
+.podcasts .section-title{
+    border-bottom: 3px solid #9ad480;
+}
+.h-post{
+    padding:20px;
+    margin-top:30px;
+    height: fit-content;
+}
+.col-lg-9{
+    padding:0px;
+}
+.h-post img{
+    width: 370px;
+    margin-bottom:50px;
+    height:auto;
+    float: left;
+}
+.h-post .tag p{
+    color: #1061CC;
+    font-size: 12px;
+    overflow: hidden;
+    display: inline;
+    padding-right: 10px;
+    padding-left: 20px;
+    border-right: 1.5px solid grey;
+    
+}
+.h-post .date p, .v-post .date p{ 
+    color:grey;
+    font-size: 12px;
+    padding-left: 10px;
+    display: inline;
+    overflow: hidden;
+    
+}
+.h-post .Heading p{
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+    padding: 20px;
+    padding-right: 50px;
+    overflow: hidden;
+}
+.h-post .summary p{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2;
+    padding-left:20px;
+    padding-right: 30px;
+    overflow: hidden;
+    color: #5b656c;
+}
+.posts-2{
+    margin:10px;
+}
+.v-post{
+    margin-top:20px;
+    width:50%;
+}
+.v-post.col-md-6{
+    padding-left:0px;
+}
+.v-post .tag p{
+    color: #1061CC;
+    font-size: 12px;
+    padding-right: 10px;
+    margin-top: 20px;
+    border-right: 1.5px solid grey;
+    display: inline-block;
+}
+.v-post .Heading p{
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+    padding:20px;
+    padding-right:60px;
+    padding-left: 0px;
+}
+.v-post img{
+    width: 100%;
+    height: auto;
+}
+.v-post .summary p{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2;
+    padding-right: 30px;
+    color: #5b656c;
+}
+.podcasts{
+    margin:10px;
+}
 @media (min-width: 1920px) {
 body{
     width: 1920px;
 }
- }
+.homepage{
+    margin: 0 20%;
+    font-style: ;
+}
+}
  @media screen and (max-width: 700px){
     .blog-headline{
         padding-left:25px;
