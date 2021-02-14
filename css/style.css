@@ -83,7 +83,7 @@
 .description .quote .author{
     font-size:16px;
     font-style:normal;
-    font-weight: bolder;
+    font-weight: 600;
 }
 .description .blog-content li{
     font-size: 14px;
@@ -99,7 +99,7 @@
 .description .blog-content ul li::before{
     content: "\2022";
     color: red;
-    font-weight: bolder;
+    font-weight: 600;
     font-size: 24px;
     display: inline-block; 
     width: 1em;
@@ -153,7 +153,7 @@
 }
 .related-articles .title{
     font-size: 18px;
-    font-weight: bolder;
+    font-weight: 600;
     margin-bottom: 20px; 
 }
 .related-articles .row img{
@@ -291,6 +291,18 @@
 }
 .podcasts{
     margin:10px;
+}
+.twitter{
+    padding:10px;
+    margin:20px;
+}
+.twitter img{
+    float: right;
+}
+.twitter .title{
+    font-size: 18px;
+    letter-spacing: -0.5;
+    font-weight: bold;
 }
 @media (min-width: 1920px) {
 body{
