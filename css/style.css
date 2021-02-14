@@ -178,7 +178,7 @@
 
 /* Home Page CSS */
 .homepage{
-    margin:0 10%;
+    margin:0 8%;
     font-family: 'Source Sans Pro', sans-serif;
     margin-top:20px;
 }
@@ -189,7 +189,7 @@
 .posts-1 .section-subtitle,.posts-2 .section-subtitle,.podcasts .section-subtitle{
     float:right;
     font-size: 14px;
-    color:red;
+    color:#FC6640;
 }
 .posts-1 .section-title, .posts-2 .section-title, .podcasts .section-title{
     font-size: 21px;
@@ -292,17 +292,36 @@
 .podcasts{
     margin:10px;
 }
-.twitter{
-    padding:10px;
-    margin:20px;
+.twitter,.youtube{
+    padding:20px;
+    margin:10px;
+    background-color: #f1f3f5;
 }
-.twitter img{
+.twitter img,.youtube img{
     float: right;
 }
-.twitter .title{
+.twitter .title,.youtube .title{
     font-size: 18px;
     letter-spacing: -0.5;
+    font-weight: 600;
+}
+.twitter .tweet-title{
+    font-size: 14px;
     font-weight: bold;
+}
+.twitter .username{
+    color:#FC6640;
+    font-weight: normal;
+}
+.twitter .time{
+    color: rgb(87, 85, 85);
+    font-weight: normal;
+}
+.twitter p{
+    font-size: 14px;
+}
+.tweet{
+    margin-top:30px;
 }
 @media (min-width: 1920px) {
 body{
