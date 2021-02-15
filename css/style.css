@@ -238,7 +238,7 @@
 .h-post .Heading p{
     font-size: 24px;
     line-height: 28px;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.5;
     padding: 20px;
     padding-right: 50px;
     overflow: hidden;
@@ -272,7 +272,7 @@
 .v-post .Heading p{
     font-size: 24px;
     line-height: 28px;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.5;
     padding:20px;
     padding-right:60px;
     padding-left: 0px;
@@ -376,5 +376,36 @@ body{
     }
     .media{
         padding:25px;
+    }
+    .homepage{
+        margin:25px;
+    }
+    .h-post{
+        margin-top:10px;
+    }
+    .h-post img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .h-post .Heading p{
+        padding:0px;
+        margin-bottom: 0px;
+        margin-top:15px;
+    }
+    .h-post .tag p{
+        padding-left:0px;
+    }
+    .h-post .summary p{
+        margin-top:15px;
+        padding:0px;
+    }
+    .v-post .Heading p{
+        padding:0px;
+    }
+    .v-post.col-md-6{
+        padding: 10px 0px;
+    }
+    .v-post .summary p{
+        padding:0px;
     }
 }
