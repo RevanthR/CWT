@@ -77,6 +77,9 @@
     font-size: 28px;
     overflow: hidden;
     margin: 40px 0px;
+    padding-left: 90px; /* make room for the image on the left side */
+    background: transparent url(../images/quote.png) no-repeat top left;
+    border: 0;
 }
 .description blockquote .author{
     display: block;
@@ -89,18 +92,18 @@
     line-height: 24px;
     padding-left:10px;
 }
+
 .description .blog-content ol, .description .blog-content ul 
 { 
     margin: 15px;
     
 }
 .description .blog-content ol li::marker{
-    color: red;
+    color: #FC6640;
     font-weight: bolder;
 }
 .description .blog-content ul li::marker{
-    color: red;
-    font-weight: bolder;  
+    color: #FC6640; 
 }
 
 .description .media{
