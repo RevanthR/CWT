@@ -179,6 +179,9 @@
     margin-top:0px;
     padding-right:15px;
 }
+.description .media .row{
+    padding:15px;
+}
 /* Home Page CSS */
 .homepage{
     margin:0 8%;
@@ -434,18 +437,19 @@ body{
         margin-right: 15px;
         margin-left:-10px ;
     }
-    .blog-headline .row p{
-        font-size: 14px;
-        overflow: hidden;
-    }
+    
     .blog-headline h1{
         overflow: hidden;
     }
     .section-2 .col-md-8{
-        padding:20px;
+        padding:30px;
     }
-    .media{
-        padding:25px;
+    .description .media .row{
+        padding:15px;
+    }
+    .description .sub-media{
+        padding:25px 40px;
+        margin-top:20px;
     }
     .homepage{
         margin:25px;
