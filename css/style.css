@@ -182,42 +182,45 @@
     font-family: 'Source Sans Pro', sans-serif;
     margin-top:20px;
 }
-.posts-1 .title p,.posts-2 .title p,.podcasts .title p{
+.h-post .title,.v-post .title,.podcasts .title{
     padding-bottom: 10px;
+    margin-right:30px;
     border-bottom: 1px solid rgb(231, 216, 216);
 }
-.posts-1 .section-subtitle,.posts-2 .section-subtitle,.podcasts .section-subtitle{
+.h-post .section-subtitle,.v-post .section-subtitle,.podcasts .section-subtitle{
     float:right;
     font-size: 14px;
     color:#FC6640;
 }
-.posts-1 .section-title, .posts-2 .section-title, .podcasts .section-title{
+.h-post .section-title, .v-post .section-title, .podcasts .section-title{
     font-size: 21px;
     border-bottom: 3px solid #FAC346;
     letter-spacing: -0.5;
     padding-bottom:10px;
 }
-.posts-2 .section-title{
+
+.v-post .section-title{
     border-bottom: 3px solid #15a1ff;
 }
 .podcasts .section-title{
     border-bottom: 3px solid #9ad480;
 }
-.h-post{
-    padding:20px;
-    margin-top:30px;
-    height: fit-content;
+
+.h-post .row{
+    margin:40px 0px;
 }
+
 .col-lg-9{
     padding:0px;
 }
-.h-post img{
+.h-post .row img{
     width: 370px;
     margin-bottom:50px;
+    margin-right: 20px;
     height:auto;
     float: left;
 }
-.h-post .tag p{
+.h-post .tag {
     color: #1061CC;
     font-size: 12px;
     overflow: hidden;
@@ -227,7 +230,7 @@
     border-right: 1.5px solid grey;
     
 }
-.h-post .date p, .v-post .date p{ 
+.h-post .date, .v-post .date { 
     color:grey;
     font-size: 12px;
     padding-left: 10px;
@@ -235,7 +238,7 @@
     overflow: hidden;
     
 }
-.h-post .Heading p{
+.h-post .Heading{
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -0.5;
@@ -243,7 +246,7 @@
     padding-right: 50px;
     overflow: hidden;
 }
-.h-post .summary p{
+.h-post .summary{
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2;
@@ -258,10 +261,11 @@
 .v-post{
     margin-top:20px;
 }
-.v-post.col-md-6{
-    padding-left:0px;
+.v-post .col-md-6{
+    padding:40px 0px;
+    padding-right:30px;
 }
-.v-post .tag p{
+.v-post .tag{
     color: #1061CC;
     font-size: 12px;
     padding-right: 10px;
@@ -269,19 +273,19 @@
     border-right: 1.5px solid grey;
     display: inline-block;
 }
-.v-post .Heading p{
+.v-post .Heading{
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -0.5;
     padding:20px;
-    padding-right:60px;
+    padding-right:20px;
     padding-left: 0px;
 }
 .v-post img{
     width: 100%;
     height: auto;
 }
-.v-post .summary p{
+.v-post .summary{
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2;
@@ -322,13 +326,55 @@
 .tweet{
     margin-top:30px;
 }
+.carousel{
+    padding: 2% 8%;
+    background-color:#f1f3f5 ;
+
+}
+.carousel-sub{
+    padding:0px 15px;
+    padding-bottom: 20px;
+}
+.carousel-sub img{
+    float: right;
+    width: 170px;
+    padding-left:10px;
+}
+.carousel-sub .tag{
+    color: #1061CC;
+    font-size: 12px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    display: inline-block;
+}
+.carousel-sub .tag p{
+    margin:0px;
+}
+.carousel-sub .date{
+    color:grey;
+    font-size: 12px;
+    padding-left: 10px;
+    display: inline;
+    border-left: 1.5px solid grey;
+}
+.carousel-sub .Heading{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-right: 20px;
+    display: block;
+}
 @media (min-width: 1920px) {
 body{
     width: 1920px;
 }
 .homepage{
-    margin: 0 20%;
-    font-style: ;
+    margin: 1% 20%;
+    
+}
+.carousel{
+    padding: 2% 20%;
 }
 }
  @media screen and (max-width: 700px){
@@ -387,25 +433,25 @@ body{
         width: 100%;
         margin-bottom: 20px;
     }
-    .h-post .Heading p{
+    .h-post .Heading{
         padding:0px;
         margin-bottom: 0px;
         margin-top:15px;
     }
-    .h-post .tag p{
+    .h-post .tag{
         padding-left:0px;
     }
-    .h-post .summary p{
+    .h-post .summary{
         margin-top:15px;
         padding:0px;
     }
-    .v-post .Heading p{
+    .v-post .Heading{
         padding:0px;
     }
-    .v-post.col-md-6{
+    .v-post .col-md-6{
         padding: 10px 0px;
     }
-    .v-post .summary p{
+    .v-post .summary{
         padding:0px;
     }
 }
