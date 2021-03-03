@@ -447,18 +447,57 @@
     padding-right: 20px;
     display: block;
 }
-@media (min-width: 1600px) {
-body{
-    width: 1920px;
+.carousel .navbar h1{
+    display: inline;
+    font-size: 38px;
+    line-height: 40px;
+    font-weight: bolder;
+
 }
+.carousel .navbar .sub-nav{
+    float: right;
+    margin-top: 11px;
+}
+.carousel .navbar .sub-nav a{
+    padding-left:25px;
+    font-size: 16px;
+    letter-spacing: -0.2;
+    color: #000;
+}
+.carousel .navbar .icon {
+    display: none;
+}
+@media (min-width: 1600px) {
 .homepage{
-    margin: 1% 20%;
+    padding: 1% 12%;
     
 }
 .carousel{
     padding: 2% 20%;
 }
 }
+@media screen and (max-width: 700px) {
+    .carousel .navbar .sub-nav a{display: none;}
+    .carousel .navbar .sub-nav a.icon {
+      float: right;
+      display: none;
+    }
+    .carousel .navbar .sub-nav.responsive{
+        position: relative;
+        width: 100%;
+    }
+    .carousel .navbar .sub-nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .carousel .navbar .sub-nav.responsive a{
+        float: none;
+        display: block;
+        padding-top: 15px;
+        text-align: left;
+    }
+  }
 @media screen and (max-width: 700px){
     .blog-headline{
         padding-left:25px;
