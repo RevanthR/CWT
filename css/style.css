@@ -334,7 +334,7 @@
     color: #5b656c;
 }
 .podcasts{
-    margin:10px;
+    margin:0px;
 }
 .twitter,.youtube{
     margin-top:30px;
@@ -560,4 +560,38 @@
     .v-post .summary{
         padding:0px;
     }
+    .carousel{
+        padding: 30px;
+    }
+    .carousel .main-card{
+        position: relative;
+        left:0;
+        bottom:0;
+        width:100%;
+    }
+    .carousel-sub{
+       padding:0px;
+    }
+    .carousel .col-md-4{
+        margin-top:20px;
+    }
+    .h-post .row img{
+        width:100%;
+    }
+    .h-post .title, .v-post .title, .podcasts .title{
+        margin-right:0px;
+    }
+    .h-post{
+        margin: 0px -15px;
+    }
+    .main{
+        margin: 0px;
+        padding: 0px;
+    }
+    .carousel h1{
+        margin:10px -15px;
+        display: block;
+        float: left;
+    }
+    
 }
