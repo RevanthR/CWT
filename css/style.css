@@ -8,12 +8,11 @@
     margin:0px;
 }
 .blog-headline{
-    height:61rem;
-    padding-left: 20%;
-    padding-right:20%;
     width: 100%;
     padding-top:96px;
     background: #f1f3f5;
+    padding: 20px 20%;
+    height: 610px;
 }
 .blog-headline .arrow{
     width:20px;
@@ -30,6 +29,9 @@
     line-height: 24px;
     letter-spacing: -0.2px;
 }
+.blog-headline .author-name{
+    overflow: hidden;
+}
 .blog-headline .row .date{
     float: right;
 }
@@ -37,10 +39,11 @@
     padding:20px 0px;
 
 }
-.blog-headline img{
-    padding-top:20px;
+.blog-headline .main-image{
+    position: relative;    
     width: 100%;
     border-radius: 3px;
+    background-color: #f1f3f5;
 }
 .blog-headline .user{
     width: 40px;
