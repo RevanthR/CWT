@@ -3,6 +3,13 @@
     margin: 0px;
     font-family: 'Source Sans Pro', sans-serif;
 }
+body{
+    width:100%;
+    margin:auto;
+    min-width:600px;
+    max-width:2000px
+}
+
 .container-fluid{
     padding: 0px;
     margin:0px;
@@ -12,7 +19,7 @@
     padding-top:96px;
     background: #f1f3f5;
     padding: 20px 20%;
-    height: 610px;
+    height: 35em;
 }
 .blog-headline .arrow{
     width:20px;
@@ -46,10 +53,12 @@
     background-color: #f1f3f5;
 }
 .blog-headline .user{
-    width: 40px;
+    width: 50px;
+    height: 50px;
     float:left;
     padding-top:0px;
     margin-right:20px;
+    border-radius: 50%;
 }
 
 .description{
@@ -185,6 +194,7 @@
 .description .media .row{
     padding:15px;
 }
+
 /* Home Page CSS */
 .homepage{
     margin:0 8%;
@@ -422,14 +432,14 @@
 }
 .carousel-sub img{
     float: right;
-    width: 170px;
+    width: 45%;
     padding-left:10px;
 }
 .carousel-sub .tag{
     color: #1061CC;
     font-size: 12px;
     padding-bottom: 0px;
-    padding-right: 0px;
+    padding-right: 10px;
     display: inline-block;
 }
 .carousel-sub .tag p{
@@ -467,8 +477,24 @@
     letter-spacing: -0.2;
     color: #000;
 }
+.carousel .navbar .sub-nav a:hover{
+    text-decoration: none;
+}
 .carousel .navbar .icon {
     display: none;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 @media (min-width: 1600px) {
 .homepage{
@@ -479,7 +505,14 @@
     padding: 2% 20%;
 }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px){
+    .carousel{
+        padding: 2% 2%;
+    }    
+
+}
+
+@media screen and (max-width: 1024px) {
     .carousel .navbar .sub-nav a{display: none;}
     .carousel .navbar .sub-nav a.icon {
       float: right;
@@ -501,7 +534,7 @@
         text-align: left;
     }
   }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     .blog-headline{
         padding-left:25px;
         padding-right:25px;

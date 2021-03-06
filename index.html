@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
@@ -30,39 +31,50 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8 main">
+            <div class="col-md-8 main w3-animate-right">
                 <img src="images/carousel-main.png" alt="main-carousel-img">
                 <div class="main-card">
-                    <p class="tag">Press releases</p>
-                    <p class="date">Oct 27,2020  </p>
-                    <h3 class="title">Meeting Expectations: 5 things Australian planners should consider as meetings & events resume</h3>
-                    <p class="num">1 of 5</p>
-                    <a href="#" class="previous">&#8592;</a>
-                    <a href="#" class="previous">&#8594;</a>
+                    <p class="tag" id="tag">Press releases</p>
+                    <p class="date" id="tag">Oct 27,2020  </p>
+                    <h3 class="title" id="tag">Meeting Expectations: 5 things Australian planners should consider as meetings & events resume</h3>
+                    <p class="num" id="num">1 of 5</p>
+                    <a href="#" class="prev" onclick="plusSlides(-1)">&#8592;</a>
+                    <a href="#" class="next" onclick="plusSlides(+1)">&#8594;</a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="row carousel-sub">
-                    <img src="images/carousel-sub2.png" alt="carousel-sub">
-                    <p class="tag">Press releases &nbsp; <span class="date"> Oct 27, 2020 <br> </span></p>
-                    <p class="Heading">The Fabric of Business Travel - A message from Kurt Ekert, President & CEO</p>
-                </div>
-                <div class="row carousel-sub">
-                    <img src="images/carousel-sub2.png" alt="carousel-sub">
-                    <p class="tag">Press releases &nbsp; <span class="date"> Oct 27, 2020 <br> </span></p>
-                    <p class="Heading">The Fabric of Business Travel - A message from Kurt Ekert, President & CEO</p>
-                </div>
-                <div class="row carousel-sub">
-                    <img src="images/carousel-sub2.png" alt="carousel-sub">
-                    <p class="tag">Press releases &nbsp; <span class="date"> Oct 27, 2020 <br> </span></p>
-                    <p class="Heading">The Fabric of Business Travel - A message from Kurt Ekert, President & CEO</p>
-                </div>
-                <div class="row carousel-sub">
-                    <img src="images/carousel-sub2.png" alt="carousel-sub">
-                    <p class="tag">Press releases &nbsp; <span class="date"> Oct 27, 2020 <br> </span></p>
-                    <p class="Heading">The Fabric of Business Travel - A message from Kurt Ekert, President & CEO</p>
-                </div>
+            <div class="col-md-4 carousel-sub w3-animate-right a">
+                <img src="images/carousel-main.png" alt="carousel-sub">
+                <p class="tag">Press releases</p>
+                <p class="date">Oct 26, 2020</p>
+                <p class="Heading">Meeting Expectations: 5 things Australian planners should consider as meetings & events resume</p>
             </div>
+            <div class="col-md-4 carousel-sub w3-animate-right 2">
+                <img src="images/carousel-sub2.png" alt="carousel-sub">
+                <p class="tag">Press releasses</p>
+                <p class="date">Oct 27, 2020</p>
+                <p class="Heading">The Fabric of Business Travel - A message from Kurt Ekert, President & CEO</p>
+            </div>
+            
+            <div class="col-md-4 carousel-sub w3-animate-right 3">
+                <img src="images/carousel-sub2.png" alt="carousel-sub">
+                <p class="tag">Press releases</p>
+                <p class="date">Oct 28, 2020</p>
+                <p class="Heading">The Fabric of Business Travel - A message from Kurt Ekert, President & CEO</p>
+            </div>
+                
+            <div class="col-md-4 carousel-sub w3-animate-right 4">
+                <img src="images/carousel-sub2.png" alt="carousel-sub">
+                <p class="tag">Press releases </p>
+                <p class="date">Oct 29, 2020</p>
+                <p class="Heading">The Fabric of Business Travel - A message from Kurt Ekert, President & CEO</p>
+            </div>
+            <div class="col-md-4 carousel-sub w3-animate-right 5">
+                <img src="images/carousel-sub2.png" alt="carousel-sub">
+                <p class="tag">Press releases </p>
+                <p class="date">Oct 30, 2020</p>
+                <p class="Heading">The Fabric of Business Travel - A message from Kurt Ekert, President & CEO</p>
+            </div>
+        </div>
         </div>
     </section>
     <div class="container-fluid homepage">
