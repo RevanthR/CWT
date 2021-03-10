@@ -23,30 +23,23 @@ function currentSlide(n){
 
 function showSlides(n){
   var i;
-  var slides = document.getElementsByClassName("carousel-sub");
-  var arr = Array.prototype.slice.call( slides, 0 );
+  var slides = $(".carousel-sub");
   if(n>slides.length){
     slideIndex=1;
   }
   if(n<1){
     slideIndex=slides.length;
   }
-  console.log(arr);
+  var arr = Array.prototype.slice.call( slides, 0 );
   for (i=0;i<arr.length;i++)
-  {
-    arr[i].style.display="none";
-  }
-  x=arr.splice(0,slideIndex);
-  console.log(tag);
-  arr=[...arr,...x];
-  // arr.push(x);
-  console.log(x);
-  console.log(arr);
-  for (i=0;i<arr.length-1;i++)
   {
     arr[i].style.display="block";
   }
-  
+  arr[slideIndex-1].style.display="none";
+  $(arr[slideIndex-1]).addClass('main-data');
+  $(arr[slideIndex-2]).removeClass('main-data');
   console.log(slideIndex);
+  console.log(arr.length-slideIndex);
   
 }
+
