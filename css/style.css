@@ -52,7 +52,7 @@ body{
 .blog-headline h1{
     padding:20px 0px;
     padding-top:0px;
-
+    font-weight: bold;
 }
 .blog-headline .main-image{
     position: relative;    
