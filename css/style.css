@@ -601,6 +601,7 @@ body{
     }
     .homepage{
         margin:25px;
+        padding: 0 2%;
     }
     .h-post{
         margin-top:10px;
@@ -640,10 +641,22 @@ body{
         width:100%;
     }
     .carousel-sub{
-       padding:0px;
+        display: block;
+       padding:20px;
+    }
+    .carousel-sub{
+        padding: 20px 10px;
     }
     .carousel .col-md-4{
         margin-top:20px;
+    }
+    .carousel-sub .Heading{
+        padding-top: 10px;
+        font-size:18px;
+        line-height: 1.5;
+    }
+    .carousel-sub .date,.carousel-sub .tag{
+        font-size: 14px;
     }
     .h-post .row img{
         width:100%;
@@ -653,6 +666,9 @@ body{
     }
     .h-post{
         margin: 0px -15px;
+    }
+    .h-post .summary,.v-post .summary{
+        font-size:20px;
     }
     .main{
         margin: 0px;
