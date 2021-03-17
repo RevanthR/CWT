@@ -212,6 +212,7 @@ body{
     letter-spacing: -0.5;
     margin-top:0px;
     padding-right:15px;
+    overflow: hidden;
 }
 .description .media .row{
     padding:15px;
