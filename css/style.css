@@ -195,7 +195,7 @@ body{
     color:#1061CC;
     display: inline-block;
     border-right: 1px solid #bfc3c6;
-    padding-right:16px;
+    padding-right:8px;
     margin-top:10px;
 }
 .related-articles .row .date{
@@ -203,7 +203,7 @@ body{
     color:#838a90;
     float: none;
     display: inline;
-    padding-left: 16px;
+    padding-left: 8px;
 }
 .related-articles .title{
     font-size:14px;
