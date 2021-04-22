@@ -302,7 +302,7 @@ body{
     position: absolute;
     bottom:-60px;
     left:40px;
-    background-color: white;
+    background-color: rgba(0,0,0,0.8);
     padding: 22px 20px;
 }
 .carousel .main-card .tag{
@@ -310,25 +310,32 @@ body{
     font-size:12px;
     display: inline;
     padding-right:12px;
+    opacity: ;
     border-right: 1px solid #838a90;
 }
 .carousel .main-card .date{
     display: inline;
     padding-left: 12px;
-    color:#979da2;
+    opacity: 1;
+    color: white;
 }
 .carousel .main-card h3{
     font-size:24px;
     line-height: 28px;
+    color: white;
+    opacity: 1;
 }
 .carousel .main-card .num{
     color: #979da2;
     display: inline;
     margin-right: 20px;
+    opacity: 1;
+    color: white;
 }
 .carousel .main-card a{
     color: #e65e43;
     padding-right: 15px;
+    opacity: 1;
 }
 .carousel .main-card a:hover{
     text-decoration: none;
