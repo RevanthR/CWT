@@ -246,7 +246,8 @@ body{
 .carousel-sub img{
     float: right;
     width: 45%;
-    padding-left:0px;
+    height:95px;
+    margin-left:10px;
     border-radius: 3px;
 }
 .carousel-sub .tag{
