@@ -33,6 +33,31 @@ body{
     background-color: #f1f3f5;
     display: block;
 }
+.blog-post-main{
+    position: absolute;
+    width: 100%;
+    top:0;
+    left:0;
+    height: 120px;
+    z-index:-20;
+    background-color: #f1f3f5;
+    display: block;
+}
+.blog-post-bg{
+    position: absolute;
+    width: 100%;
+    top:110px;
+    left:0;
+    height: 200px;
+    z-index:-25;
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url(../images/blogpost.png);
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .blog-headline{
     padding-top:96px;
     margin:10px 10%;
@@ -105,7 +130,7 @@ body{
     margin: 40px 0px;
     padding-top: 0px;
     padding-left: 100px; /* make room for the image on the left side */
-    background: transparent url(../images/quote.png) no-repeat top left;
+    background: transparent url(../images/quot÷e.png) no-repeat top left;
     border: 0;
 }
 .description blockquote .author{
@@ -145,13 +170,16 @@ body{
 .description .media a{
     color: red;
 }
-.description .media button{
+.description .media button,.blog-post button{
     background-color: #333F48;
     color:white;
     margin: 10px 0px;
 }
-.description .media button:hover{
+.description .media button:hover,.blog-post button:hover{
     background-color: #838a90;
+}
+.blog-post button{
+    margin-left:15px;
 }
 .description .sub-media{
     display: block;
@@ -234,9 +262,8 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     padding-top:20px;
 }
-.carousel{
+.carousel,.blog-page{
     display: block;
-    background-color:#f1f3f5 ;
     padding: 2% 8%;
 }
 .carousel-sub{
@@ -275,27 +302,27 @@ body{
     padding-right: 20px;
     display: block;
 }
-.carousel .navbar h1{
+.navbar h1{
     display: inline;
     font-size: 38px;
     line-height: 40px;
     font-weight: bolder;
 
 }
-.carousel .navbar .sub-nav{
+.navbar .sub-nav{
     float: right;
     margin-top: 11px;
 }
-.carousel .navbar .sub-nav a{
+.navbar .sub-nav a{
     padding-left:25px;
     font-size: 16px;
     letter-spacing: -0.2;
     color: #000;
 }
-.carousel .navbar .sub-nav a:hover{
+.navbar .sub-nav a:hover{
     text-decoration: none;
 }
-.carousel .navbar .icon {
+.navbar .icon {
     display: none;
 }
 .carousel .main img{
@@ -315,7 +342,6 @@ body{
     font-size:12px;
     display: inline;
     padding-right:12px;
-    opacity: ;
     border-right: 1px solid #838a90;
 }
 .carousel .main-card .date{
@@ -363,6 +389,12 @@ body{
 }
 .v-post .section-title{
     border-bottom: 3px solid #15a1ff;
+}
+.blog-post .section-title{
+    border-bottom: 3px solid #FC6640;
+}
+.blog-post p{
+    margin-left:15px;
 }
 .podcasts .section-title{
     border-bottom: 3px solid #9ad480;
@@ -526,18 +558,69 @@ body{
     font-size:12px;
     padding-left:12px;
 }
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
+/* Bloglist Page Html */
+.blog-post .col-md-4{
+    margin-top:10px;
+    margin-bottom: 40px;
+    padding-right:30px;
 }
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+.blog-page .navbar .lbp{
+    padding:100px;
+    margin: 30px auto;
+    display: block;
+    text-align: center;  
+    font-family: Source Sans Pro;
+    font-size: 38px;
+    font-style: normal;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.blog-post .sort-button{
+    text-align: right;
+    margin-top:30px;
+    padding-right: 30px;
+    display: block;
+}
+.blog-post .sort-button button{
+    background: none;
+    color: black;
+    border: none;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  .pagination{
+      display: block;
+      text-align: center;
+  }
+  .pagination .active{
+      color:#e65e43
+  }
+  .pagination a{
+      text-decoration: none;
+      display: inline;
+      padding-left: 5px;
+      color: #5b656c;
+      margin: auto;
+  }
 @media screen and (max-width: 1250px){
     .background-main{
         display: none;
