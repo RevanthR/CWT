@@ -43,6 +43,16 @@ body{
     background-color: #f0f1f2;
     display: block;
 }
+.search-page-main{
+    position: absolute;
+    width:100%;
+    top:0;
+    left:0;
+    height: 190px;
+    z-index:-20;
+    background-color: #f0f1f2;
+    display: block;
+}
 .blog-post-bg{
     position: absolute;
     width:100%;
@@ -620,6 +630,103 @@ body{
       padding-left: 5px;
       color: #5b656c;
       margin: auto;
+  }
+  /* Search Page Html */
+  .search-page{
+      padding: 0% 8%;
+  }
+  .search-page .search-box input{
+      width:90%;
+      position: relative;
+      top:125px;
+      padding:20px;
+      border: none;
+      border-right: 1px solid #bfc3c6;
+      box-shadow: 0px 25px 25px rgba(111, 120, 126, 0.2);
+      border-radius: 3px;
+  }
+  .search-page .search-box button{
+      width: 10%;
+      padding:10px;
+      border: 10px white solid;
+      background-color:#e65e43;
+      color:white;
+      position: relative;
+      top:125px;
+      float: right;
+      box-shadow: 0px 25px 25px rgba(111, 120, 126, 0.2);
+      border-radius: 3px;
+  }
+  .search-page .search-title{
+    font-family: Source Sans Pro;
+    font-size: 38px;
+    top:70px;
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+  }
+  .search-page .n-results{
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: #5B656C;
+    padding-top:200px;
+    
+  }
+  .search-page .search-result{
+      background-color: #f1f3f5;
+      padding:30px;
+      margin: 20px 0px;
+  }
+  .search-page .search-result .title{
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: #1061CC;
+    
+  }
+  .search-page .search-result .data{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    color: #5B656C;
+  }
+  .search-page .search-result .tag button{
+    border: none;
+    padding:5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    margin-right:10px;
+    margin-top:20px;
+    border-radius: 3px;
+  }
+  .pink{
+      background-color: #eccfee ;
+      color:#801389;
+  }
+  .yellow{
+      background-color: #fce9bf;
+      color:#b57e00;
+  }
+  .green{
+      background-color: #e6f4df;
+      color: #3a801a;
   }
 @media screen and (max-width: 1250px){
     .background-main{
