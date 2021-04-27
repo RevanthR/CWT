@@ -35,7 +35,7 @@ function showSlides(n){
   {
     arr[i].style.display="block";
   }
-  arr[slideIndex-1].style.display="none";
+ 
   $(arr[slideIndex-1]).addClass('main-data');
   $(arr[slideIndex-2]).removeClass('main-data');
   console.log(slideIndex);
