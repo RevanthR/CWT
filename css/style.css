@@ -1021,6 +1021,31 @@ body{
         line-height: 28px;
         letter-spacing: -0.5px;
         text-align: left;
-
+    }
+    .search-page{
+        padding:0px 30px;
+    }
+    .search-page-main{
+        display: none;
+    }
+    .search-page .search-box{
+        top:-120px;
+        position: relative;
+    }
+    .search-page .search-title{
+        background-color: #f1f3f5;
+        margin:-30px;
+        padding:60px 30px;
+        top:0px;
+        z-index: -3;
+    }
+    .search-page .search-box button{
+        width: 30%;
+    }
+    .search-page .search-box input{
+        width:70%;
+    }
+    .search-page .n-results{
+        padding-top:40px;
     }
 }
